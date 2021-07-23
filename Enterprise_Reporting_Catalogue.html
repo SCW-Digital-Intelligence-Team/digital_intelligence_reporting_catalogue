@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Enterprise Reporting Catalogue – Alpha</title>
+  <meta name="description" content="SCW Digital Intelligence Reporting Catalogue" />
+  <meta name="generator" content="bookdown #bookdown:version# and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Enterprise Reporting Catalogue – Alpha" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="SCW Digital Intelligence Reporting Catalogue" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Enterprise Reporting Catalogue – Alpha" />
+  
+  <meta name="twitter:description" content="SCW Digital Intelligence Reporting Catalogue" />
+  
+
+<meta name="author" content="Developer - Jeff Morgan-Harrisskitt" />
+<meta name="author" content="Typeset - Daniel White" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+<!--bookdown:link_prev-->
+<!--bookdown:link_next-->
+<script src="assets/header-attrs-2.9/header-attrs.js"></script>
+<script src="assets/jquery-2.2.3/jquery.min.js"></script>
+<link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+<script src="assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
+<script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<link href="assets/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="assets/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+<!--bookdown:title:start-->
+<div id="header">
+<h1 class="title"><span style="font-size:175%; font-family:Calibri; font-style:normal; color:">Enterprise Reporting Catalogue – Alpha</span></h1>
+<h2 class="subtitle"><em><span style="font-size:125%; font-family:Calibri; font-style:normal;">SCW Digital Intelligence Team</span></em></h2>
+<p class="author"><em><span style="font-size:125%; font-family:Calibri; font-style:normal">Developer - Jeff Morgan-Harrisskitt</span></em></p>
+<p class="author"><em><span style="font-size:125%; font-family:Calibri; font-style:normal">Typeset - Daniel White</span></em></p>
+<p class="date" style="margin-top: 1.5em;"><em><span style="font-size:125%; font-family:Calibri  ; font-style:normal">Publication date - 23 July 2021</span></em></p>
+</div>
+<!--bookdown:title:end-->
+
+<!--bookdown:toc:start-->
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+<!--bookdown:toc2:start-->
+<ul>
+<li><a href="#index">Introduction</a>
+<ul>
+<li><a href="#common-features">Common Features</a></li>
+</ul></li>
+<li><a href="#product-owners">Product Owners</a></li>
+<li><a href="#performance">Performance</a>
+<ul>
+<li><a href="#urgent-care">Urgent Care</a></li>
+<li><a href="#planned-care">Planned Care</a></li>
+<li><a href="#cancer">Cancer</a></li>
+<li><a href="#mental-health">Mental Health</a></li>
+<li><a href="#combined-summary">Combined Summary</a></li>
+<li><a href="#other-health">Other Health</a></li>
+<li><a href="#archived-performance">Archived Performance</a></li>
+<li><a href="#paused-due-to-covid-19">Paused due to COVID-19</a></li>
+</ul></li>
+<li><a href="#urgent-and-emergency-care">Urgent and Emergency Care</a>
+<ul>
+<li><a href="#urgent-care-reports">Urgent Care Reports</a></li>
+</ul></li>
+<li><a href="#contract-monitoring-solution">Contract Monitoring Solution</a>
+<ul>
+<li><a href="#contract-monitoring-solution-reports">Contract Monitoring Solution Reports</a></li>
+<li><a href="#archived-reports">Archived Reports</a></li>
+</ul></li>
+<li><a href="#payment-by-results-pbr">Payment by Results (PbR)</a>
+<ul>
+<li><a href="#self-service-cubes">Self Service Cubes</a></li>
+<li><a href="#payment-by-results-reports">Payment by Results Reports</a></li>
+<li><a href="#archived-payment-by-results-reports">Archived Payment by Results Reports</a></li>
+</ul></li>
+<li><a href="#coronavirus-covid-19">Coronavirus (COVID-19)</a>
+<ul>
+<li><a href="#coronavirus-covid-19-reports">Coronavirus (COVID-19) Reports</a></li>
+</ul></li>
+<li><a href="#elective-care">Elective Care</a>
+<ul>
+<li><a href="#elective-care-reports">Elective Care Reports</a></li>
+<li><a href="#archived-elective-care-reports">Archived Elective Care Reports</a></li>
+</ul></li>
+<li><a href="#mental-health-1">Mental Health</a>
+<ul>
+<li><a href="#mental-health-reports">Mental Health Reports</a></li>
+</ul></li>
+<li><a href="#cancer-care">Cancer Care</a>
+<ul>
+<li><a href="#cancer-care-reports">Cancer Care Reports</a></li>
+</ul></li>
+<li><a href="#coming-soon">Coming Soon</a></li>
+<li><a href="#accessing-insights">Accessing Insights</a></li>
+</ul>
+<!--bookdown:toc2:end-->
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><span style="font-size:175%; font-family:Calibri; font-style:normal; color:">Enterprise Reporting Catalogue – Alpha</span></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <link href="hero.css" rel="stylesheet" /> -->
+    </head>
+    <body>
+        <div class="hero-image-container">
+            <div class="image-container image-container-1">
+                <img class="image scw-logo" alt="SCW logo" src="assets/img/SCW%20Logo-no-bg.png">
+            </div>
+            <div class="image-container image-container-2">
+                <img class="image nhs-logo" alt="SCW NHS logo" src="assets/img/SCW-NHS-BLUE.png">
+            </div>
+        </div>
+    </body>
+</html>
+<!--bookdown:toc:end-->
+<!--bookdown:body:start-->
+<div id="index" class="section level1">
+<h1>Introduction</h1>
+<p>As part of our continuing drive to produce high quality analytical products, “by the NHS, for the NHS”, SCW’s Digital Intelligence Team design &amp; deliver fully scalable enterprise solutions based on robust data models. Digital Intelligence are specialists in using complex data sources and visualisation technology that allows the end user to delve deeper into the insights the analysis provides.</p>
+<p>Working collaboratively with product owners and local subject matter experts along with their customers, we have developed a number of digital portfolios encompassing numerous reporting solutions.</p>
+<p><strong>Benefits of enterprise reporting solutions:</strong></p>
+<ul>
+<li><p>Standardised layouts across enterprise reporting suite:</p>
+<ul>
+<li><p>Consistent look and feel</p></li>
+<li><p>Minimises time to familiarise usage across product range</p></li>
+<li><p>User interfaces and functionality standard</p></li>
+</ul></li>
+<li><p>Single version of information</p></li>
+<li><p>Continuous improvement cycles based on customer feedback</p></li>
+</ul>
+<p>Each reporting portfolio contains supporting documentation including release notes, quick start guide allowing the users to find out more about any updates and improvements made based on the feedback received.</p>
+<p>Access to the <a href="https://insights-secure.scwcsu.nhs.uk/SitePages/landing.aspx" target="_blank">Insights Portal</a> and digital portfolio pages are authorised upon request. <strong>Note: Only users with prior permission to access to the portfolio pages will be able to view them.</strong>
+To request access, please refer to the <em>Insights Access</em> page at the end of the catalogue.</p>
+<hr />
+<div id="common-features" class="section level2">
+<h2>Common Features</h2>
+<p>SCW’s Enterprise Reports are designed to optimise the delivery of clear, easy to understand key top line data, whilst allowing selection and organisation by all available options. From a single page, users can view a region wide overview, then drill down to a single provider for one treatment pathway. Every selection is dynamically updated in real time so the latest information is always at your fingertips:</p>
+<ol style="list-style-type: decimal">
+<li><p>Simple to use navigation menu bars embedded at the top of each report page. For <a href="example:\" class="uri">example:\</a>
+<img src="assets/img/ER_Catalogue_images/NavBar.png" title="Navigation Bar" alt="Navigation bar image" /></p></li>
+<li><p>Dynamic selection drop downs, enabling granular filtering by applicable elements: Region, Locality, STP, CCG, Provider and Treatment Functions.<br />
+<img src="assets/img/ER_Catalogue_images/FilterDropDowns.png" title="Filtering Drop Downs" alt="Filtering dropdowns" /></p></li>
+<li><p>Summary tables showing most recent for selected elements / treatment functions.</p>
+<p><img src="assets/img/ER_Catalogue_images/SummaryTables.png" title="Summary Tables" /></p></li>
+<li><p>Dynamically updating time series charts, showing most recent data for selected elements / treatment functions.<br />
+<img src="assets/img/ER_Catalogue_images/TimeSeriesChart.png" title="Time Series Charts" alt="Time series charts" /></p></li>
+<li><p>Detailed breakdown of performance metrics over time. Data are dynamically updated to show most recent data for selected elements / treatment functions.<br />
+<img src="assets/img/ER_Catalogue_images/PerformanceMetrics.png" title="Performance Metrics" alt="Performance metrics" /></p></li>
+<li><p>The notes page contains technical information about the report, including:<br />
+<img src="assets/img/ER_Catalogue_images/ReportInfo.png" title="Report Information" /><br />
+Key information is also available in a popup “Metadata” ToolTip icon at the bottom corner of the screen (<em>currently only available in the Performance Reporting portfolio</em>).<br />
+<img src="assets/img/ER_Catalogue_images/MetaData.png" title="Workbook MetaData" alt="Workbook metadata" /></p></li>
+<li><p>Time-series summary data with colour coded performance indicators reflecting compliance with targets. The plot dynamically updates to reflect the selected metrics from the drop down menus, offering a completely granular insight into the data provided.<br />
+<img src="assets/img/ER_Catalogue_images/TimeSeriesChart.png" title="Time Series Chart" alt="Tiem series chart" /></p></li>
+<li><p>Time series data table, dynamically updated by user selected metrics. Data variance from target is colour-coded to indicate compliance.<br />
+<img src="assets/img/ER_Catalogue_images/TimeSeriesTable.png" title="Time Series Table" alt="Tiem series table" /></p></li>
+<li><p>Ranked data table with user selected ordering. Rankings shown reflect user selected metrics from the drop down lists on the page.<br />
+<img src="assets/img/ER_Catalogue_images/RankedDataTable.png" title="Ranked Data Table" alt="Ranked data table" /></p></li>
+<li><p>Geographic mapping of data sets, displayed by CCG or STP boundary levels. Data is dynamically updated to reflect user-selected metrics and colour-coded to reflect compliance with metric target. A scatter plot of summary data displayed underneath the map.</p></li>
+</ol>
+<hr />
+</div>
+</div>
+<div id="product-owners" class="section level1">
+<h1>Product Owners</h1>
+<p>The Product Owner manages a Digital Portfolio or specific reports within a portfolio. The Product Owner’s responsibilities include:</p>
+<ul>
+<li><p>Acting as the “conduit” between SCW teams and the Solutions Development team:</p>
+<ul>
+<li><p>Agreeing the scope and the report requirements</p></li>
+<li><p>Managing Information Governance (IG) issues and obtaining required IG clearance</p></li>
+<li><p>Agree development milestones including Minimum Viable Product</p></li>
+<li><p>Responsible for carrying out User Acceptance Testing (UAT) for products in all testing phases</p></li>
+<li><p>Final sign off for the product to the live environment</p></li>
+<li><p>Report issues highlighted to the Solution Development Team for resolution</p></li>
+</ul></li>
+<li><p>Customer communications for all launches, beta, official &amp; maintenance releases</p></li>
+<li><p>Customer engagement:</p>
+<ul>
+<li><p>Collate requirements for maintenance review</p></li>
+<li><p>Collate customer feedback</p></li>
+<li><p>Customer/user survey engagement</p></li>
+</ul></li>
+</ul>
+<p>Typically, within SCW, a Product Owner may manage an entire Digital Portfolio (e.g. Performance, Urgent Care etc). However, in some instances, there may be multiple Product Owners assigned to different reports within a single portfolio. Where this is the case, this will be displayed on the relevant Digital Portfolio page.</p>
+<p>A summary of Digital Portfolios and their respective Product Owners is shown below:</p>
+<div id="escukkbtfr" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: Arial;
+}
+
+#escukkbtfr .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #E8EDEE;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#escukkbtfr .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#escukkbtfr .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#escukkbtfr .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 4px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#escukkbtfr .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#escukkbtfr .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#escukkbtfr .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#escukkbtfr .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#escukkbtfr .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#escukkbtfr .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#escukkbtfr .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#escukkbtfr .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#escukkbtfr .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#escukkbtfr .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#escukkbtfr .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#escukkbtfr .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#escukkbtfr .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#escukkbtfr .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#escukkbtfr .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#escukkbtfr .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#escukkbtfr .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#escukkbtfr .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#escukkbtfr .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#escukkbtfr .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#escukkbtfr .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#escukkbtfr .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#escukkbtfr .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#escukkbtfr .gt_left {
+  text-align: left;
+}
+
+#escukkbtfr .gt_center {
+  text-align: center;
+}
+
+#escukkbtfr .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#escukkbtfr .gt_font_normal {
+  font-weight: normal;
+}
+
+#escukkbtfr .gt_font_bold {
+  font-weight: bold;
+}
+
+#escukkbtfr .gt_font_italic {
+  font-style: italic;
+}
+
+#escukkbtfr .gt_super {
+  font-size: 65%;
+}
+
+#escukkbtfr .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table" style="table-layout: fixed;">
+  <colgroup>
+    <col style="width:180px;"/>
+    <col/>
+  </colgroup>
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-left-width: 2px; border-left-style: solid; border-left-color: #768692; border-top-width: 2px; border-top-style: solid; border-top-color: #768692;">Product Owner(s)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-right-width: 2px; border-right-style: solid; border-right-color: #768692; border-top-width: 2px; border-top-style: solid; border-top-color: #768692;">Email</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr class="gt_group_heading_row">
+      <td colspan="2" class="gt_group_heading" style="background-color: #E8EDEE; text-align: left; font-weight: bold; border-top-width: 2px; border-top-style: solid; border-top-color: #768692; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #768692; border-left-width: 2px; border-left-style: solid; border-left-color: #768692; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;">Cancer Care</td>
+    </tr>
+    <tr><td class="gt_row gt_left" style="background-color: #FFFFFF; border-left-width: 2px; border-left-style: solid; border-left-color: #768692;">Catherine Neck</td>
+<td class="gt_row gt_left" style="background-color: #FFFFFF; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;"><div class='gt_from_md'><p><a href=" mailto:catherine.neck@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue "> catherine.neck@nhs.net </a></p>
+</div></td></tr>
+    <tr class="gt_group_heading_row">
+      <td colspan="2" class="gt_group_heading" style="background-color: #E8EDEE; text-align: left; font-weight: bold; border-top-width: 2px; border-top-style: solid; border-top-color: #768692; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #768692; border-left-width: 2px; border-left-style: solid; border-left-color: #768692; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;">Contract Monitoring Solutions</td>
+    </tr>
+    <tr><td class="gt_row gt_left" style="background-color: #FFFFFF; border-left-width: 2px; border-left-style: solid; border-left-color: #768692;">Ian Price</td>
+<td class="gt_row gt_left" style="background-color: #FFFFFF; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;"><div class='gt_from_md'><p><a href=" mailto:ian.price@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue "> ian.price@nhs.net </a></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #FFFFFF; border-left-width: 2px; border-left-style: solid; border-left-color: #768692;">Enohi Odogu</td>
+<td class="gt_row gt_left" style="background-color: #FFFFFF; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;"><div class='gt_from_md'><p><a href=" mailto:enohi.odogu@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue "> enohi.odogu@nhs.net </a></p>
+</div></td></tr>
+    <tr class="gt_group_heading_row">
+      <td colspan="2" class="gt_group_heading" style="background-color: #E8EDEE; text-align: left; font-weight: bold; border-top-width: 2px; border-top-style: solid; border-top-color: #768692; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #768692; border-left-width: 2px; border-left-style: solid; border-left-color: #768692; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;">Covid-19</td>
+    </tr>
+    <tr><td class="gt_row gt_left" style="background-color: #FFFFFF; border-left-width: 2px; border-left-style: solid; border-left-color: #768692;">Enohi Odogu</td>
+<td class="gt_row gt_left" style="background-color: #FFFFFF; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;"><div class='gt_from_md'><p><a href=" mailto:enohi.odogu@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue "> enohi.odogu@nhs.net </a></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #FFFFFF; border-left-width: 2px; border-left-style: solid; border-left-color: #768692;">Gill Page</td>
+<td class="gt_row gt_left" style="background-color: #FFFFFF; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;"><div class='gt_from_md'><p><a href=" mailto:gill.page@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue "> gill.page@nhs.net </a></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #FFFFFF; border-left-width: 2px; border-left-style: solid; border-left-color: #768692;">Ross Muteham</td>
+<td class="gt_row gt_left" style="background-color: #FFFFFF; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;"><div class='gt_from_md'><p><a href=" mailto:ross.muteham@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue "> ross.muteham@nhs.net </a></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #FFFFFF; border-left-width: 2px; border-left-style: solid; border-left-color: #768692;">Paul Walton</td>
+<td class="gt_row gt_left" style="background-color: #FFFFFF; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;"><div class='gt_from_md'><p><a href=" mailto:paul.walton@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue "> paul.walton@nhs.net </a></p>
+</div></td></tr>
+    <tr class="gt_group_heading_row">
+      <td colspan="2" class="gt_group_heading" style="background-color: #E8EDEE; text-align: left; font-weight: bold; border-top-width: 2px; border-top-style: solid; border-top-color: #768692; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #768692; border-left-width: 2px; border-left-style: solid; border-left-color: #768692; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;">Elective Care</td>
+    </tr>
+    <tr><td class="gt_row gt_left" style="background-color: #FFFFFF; border-left-width: 2px; border-left-style: solid; border-left-color: #768692;">Lewis Ball</td>
+<td class="gt_row gt_left" style="background-color: #FFFFFF; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;"><div class='gt_from_md'><p><a href=" mailto:lewis.ball@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue "> lewis.ball@nhs.net </a></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #FFFFFF; border-left-width: 2px; border-left-style: solid; border-left-color: #768692;">Jim Jowett</td>
+<td class="gt_row gt_left" style="background-color: #FFFFFF; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;"><div class='gt_from_md'><p><a href=" mailto:jim.jowett@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue "> jim.jowett@nhs.net </a></p>
+</div></td></tr>
+    <tr class="gt_group_heading_row">
+      <td colspan="2" class="gt_group_heading" style="background-color: #E8EDEE; text-align: left; font-weight: bold; border-top-width: 2px; border-top-style: solid; border-top-color: #768692; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #768692; border-left-width: 2px; border-left-style: solid; border-left-color: #768692; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;">HR</td>
+    </tr>
+    <tr><td class="gt_row gt_left" style="background-color: #FFFFFF; border-left-width: 2px; border-left-style: solid; border-left-color: #768692;">Paul Toomer</td>
+<td class="gt_row gt_left" style="background-color: #FFFFFF; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;"><div class='gt_from_md'><p><a href=" mailto:paul.toomer@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue "> paul.toomer@nhs.net </a></p>
+</div></td></tr>
+    <tr class="gt_group_heading_row">
+      <td colspan="2" class="gt_group_heading" style="background-color: #E8EDEE; text-align: left; font-weight: bold; border-top-width: 2px; border-top-style: solid; border-top-color: #768692; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #768692; border-left-width: 2px; border-left-style: solid; border-left-color: #768692; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;">Mental Health</td>
+    </tr>
+    <tr><td class="gt_row gt_left" style="background-color: #FFFFFF; border-left-width: 2px; border-left-style: solid; border-left-color: #768692;">Samara Makinde</td>
+<td class="gt_row gt_left" style="background-color: #FFFFFF; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;"><div class='gt_from_md'><p><a href=" mailto:samara.makinde@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue "> samara.makinde@nhs.net </a></p>
+</div></td></tr>
+    <tr class="gt_group_heading_row">
+      <td colspan="2" class="gt_group_heading" style="background-color: #E8EDEE; text-align: left; font-weight: bold; border-top-width: 2px; border-top-style: solid; border-top-color: #768692; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #768692; border-left-width: 2px; border-left-style: solid; border-left-color: #768692; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;">Performance</td>
+    </tr>
+    <tr><td class="gt_row gt_left" style="background-color: #FFFFFF; border-left-width: 2px; border-left-style: solid; border-left-color: #768692;">Renu Dublish</td>
+<td class="gt_row gt_left" style="background-color: #FFFFFF; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;"><div class='gt_from_md'><p><a href=" mailto:rdublish@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue "> rdublish@nhs.net </a></p>
+</div></td></tr>
+    <tr class="gt_group_heading_row">
+      <td colspan="2" class="gt_group_heading" style="background-color: #E8EDEE; text-align: left; font-weight: bold; border-top-width: 2px; border-top-style: solid; border-top-color: #768692; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #768692; border-left-width: 2px; border-left-style: solid; border-left-color: #768692; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;">Primary Care</td>
+    </tr>
+    <tr><td class="gt_row gt_left" style="background-color: #FFFFFF; border-left-width: 2px; border-left-style: solid; border-left-color: #768692;">Jack Willis</td>
+<td class="gt_row gt_left" style="background-color: #FFFFFF; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;"><div class='gt_from_md'><p><a href=" mailto:jack.willis@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue "> jack.willis@nhs.net </a></p>
+</div></td></tr>
+    <tr class="gt_group_heading_row">
+      <td colspan="2" class="gt_group_heading" style="background-color: #E8EDEE; text-align: left; font-weight: bold; border-top-width: 2px; border-top-style: solid; border-top-color: #768692; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #768692; border-left-width: 2px; border-left-style: solid; border-left-color: #768692; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;">Secondary Uses Service (SUS) PbR</td>
+    </tr>
+    <tr><td class="gt_row gt_left" style="background-color: #FFFFFF; border-left-width: 2px; border-left-style: solid; border-left-color: #768692;">Hannah Sleep</td>
+<td class="gt_row gt_left" style="background-color: #FFFFFF; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;"><div class='gt_from_md'><p><a href=" mailto:hannah.sleep@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue "> hannah.sleep@nhs.net </a></p>
+</div></td></tr>
+    <tr class="gt_group_heading_row">
+      <td colspan="2" class="gt_group_heading" style="background-color: #E8EDEE; text-align: left; font-weight: bold; border-top-width: 2px; border-top-style: solid; border-top-color: #768692; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #768692; border-left-width: 2px; border-left-style: solid; border-left-color: #768692; border-right-width: 2px; border-right-style: solid; border-right-color: #768692;">Urgent Care</td>
+    </tr>
+    <tr><td class="gt_row gt_left" style="background-color: #FFFFFF; border-left-width: 2px; border-left-style: solid; border-left-color: #768692; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #768692;">Ross Muteham</td>
+<td class="gt_row gt_left" style="background-color: #FFFFFF; border-right-width: 2px; border-right-style: solid; border-right-color: #768692; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #768692;"><div class='gt_from_md'><p><a href=" mailto:ross.muteham@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue "> ross.muteham@nhs.net </a></p>
+</div></td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+<div id="performance" class="section level1">
+<h1>Performance</h1>
+<p>A set of dashboards providing detailed analysis of all areas of provider activity. They have been developed to support customers in their statutory customer assurance obligations and for monitoring and understanding provider performance.</p>
+<p>The Performance portfolio is split into three reporting types:</p>
+<div id="horgcrkkvs" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: Arial;
+}
+
+#horgcrkkvs .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: 2.5px;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #E8EDEE;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #E8EDEE;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#horgcrkkvs .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#horgcrkkvs .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#horgcrkkvs .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 4px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#horgcrkkvs .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#horgcrkkvs .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#horgcrkkvs .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#horgcrkkvs .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#horgcrkkvs .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#horgcrkkvs .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#horgcrkkvs .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#horgcrkkvs .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#horgcrkkvs .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#horgcrkkvs .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#horgcrkkvs .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#horgcrkkvs .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#horgcrkkvs .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#horgcrkkvs .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#horgcrkkvs .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#horgcrkkvs .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#horgcrkkvs .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#horgcrkkvs .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#horgcrkkvs .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#horgcrkkvs .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#horgcrkkvs .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#horgcrkkvs .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#horgcrkkvs .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#horgcrkkvs .gt_left {
+  text-align: left;
+}
+
+#horgcrkkvs .gt_center {
+  text-align: center;
+}
+
+#horgcrkkvs .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#horgcrkkvs .gt_font_normal {
+  font-weight: normal;
+}
+
+#horgcrkkvs .gt_font_bold {
+  font-weight: bold;
+}
+
+#horgcrkkvs .gt_font_italic {
+  font-style: italic;
+}
+
+#horgcrkkvs .gt_super {
+  font-size: 65%;
+}
+
+#horgcrkkvs .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table" style="table-layout: fixed;">
+  <colgroup>
+    <col style="width:150px;"/>
+    <col/>
+  </colgroup>
+  
+  
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Public</td>
+<td class="gt_row gt_left">Reports contain validated data extracted from various reporting systems. Public Performance data may be used for external customers and for analysis.</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #CDD9E7; font-weight: bold;">Provisional</td>
+<td class="gt_row gt_left" style="background-color: #CDD9E7;">Provisional data is extracted from various reporting systems. It has a provisional status as the data changes when provider trusts make updates to their live operational systems which can happen until the set deadline date.</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Self-Service</td>
+<td class="gt_row gt_left">Self-service reports are completely user-configurable &amp; utilise a web-based versions of Excel. They enable users to create their own reporting using online pivot tables to select any configuration of the available data.</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+<p>The Performance portfolio can be accessed by following <a href="https://insights-secure.scwcsu.nhs.uk/SitePages/default.aspx#/product/performance" target="_blank">this link</a>.</p>
+<div id="data-sources" class="section level3">
+<h3>Data Sources</h3>
+<p>The data sources for the Performance Reports are typically national public datasets unless otherwise stated.</p>
+</div>
+<div id="product-owner" class="section level3">
+<h3>Product Owner</h3>
+<p>The Product Owner for Performance Reports is Renu Dublish: <a href="mailto:rdublish@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">rdublish@nhs.net</a></p>
+</div>
+<div id="further-information" class="section level3">
+<h3>Further Information</h3>
+<p>For further information or if you have any questions about the Performance reports please contact <a href="mailto:scwcsu.performanceteam@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">scwcsu.performanceteam@nhs.net</a>.</p>
+<hr />
+</div>
+<div id="urgent-care" class="section level2">
+<h2>Urgent Care</h2>
+<ul>
+<li>A&amp;E Attendances and Emergency Admissions:
+<ul>
+<li><a href="https://tableau-prod.scwcsu.nhs.uk/views/AEAttendancesandEmergencyAdmissions-Public_16051824190620/Cover?:embed=y#6" target="_blank">Public</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20AE.xlsb?d=wfd91e847eaa840a087e3a927545b040c" target="_blank">Self Service</a></li>
+</ul></li>
+<li>Ambulance Clinical Outcomes:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/AmbulanceClinicalOutcomes-Public_16179737509400/Cover" target="_blank">Public</a></li>
+</ul></li>
+<li>Ambulance Quality Indicators:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/AmbulanceQualityIndicators-Public_16051824985020/Cover" target="_blank">Public</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20Ambulance%20Quality%20Indicators.xlsb?d=wbc9345c8b7844677aa833dd39e35d20e?Web=1" target="_blank">Self Service</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="planned-care" class="section level2">
+<h2>Planned Care</h2>
+<ul>
+<li>Diagnostics:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/Diagnostics-Public_16051903317650/Cover" target="_blank">Public</a></li>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/Diagnostics-Provisional_16051948676600/Cover" target="_blank">Provisional</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20Diagnostics.xlsb?d=wdd9867d06f914a2ebe2ff215890929ec" target="_blank">Self Service</a></li>
+</ul></li>
+<li>Diagnostics – Median Waits Summary:
+<ul>
+<li><a href="https://tableau-prod.scwcsu.nhs.uk/views/DiagnosticsMedianWaits-Public_16255631083240/Cover?:embed=true" target="_blank">Public</a></li>
+</ul></li>
+<li>Monthly Referral Return:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/MonthlyReferralReturn-Public_16046613295480/Cover" target="_blank">Public</a></li>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/MonthlyReferralReturn-Provisional_16046617132420/Cover" target="_blank">Provisional</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20MRR.xlsb?d=w518b118b01e64f6b9c94675d8cdd0ae5" target="_blank">Self Service</a></li>
+</ul></li>
+<li>Referral to Treatment – Median Waits Summary:
+<ul>
+<li><a href="https://tableau-prod.scwcsu.nhs.uk/views/RTTMedianWaits-Public_16244417492820/Cover?:embed=true" target="_blank">Public</a></li>
+</ul></li>
+<li>Referral to Treatment – Patient Treatment List (PTL):
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/PatientTreatmentListPTL-RTT/Cover" target="_blank">Public</a></li>
+</ul></li>
+<li>Referral to Treatment (RTT) Waiting Times Statistics for Consultant-led Elective Care:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/Consultant-ledReferraltoTreatmentWaitingTimes-Public_16051882896570/Cover" target="_blank">Public</a></li>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/Consultant-ledReferraltoTreatmentWaitingTimes-Provisional_16051945612120/Cover" target="_blank">Provisional</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20RTT.xlsb?d=w757f962a014b4b8ebc6d2fd961f53588?Web=1" target="_blank">Self Service</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="cancer" class="section level2">
+<h2>Cancer</h2>
+<ul>
+<li>Cancer Care – Monthly Waiting Times by CCG:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CancerCare-MonthlyWaitingTimes-Public_16051828462790/Cover" target="_blank">Public</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20Cancer%20Monthly.xlsb?d=w67e44c299bda46f3b344cec68d4ae3ec?Web=1" target="_blank">Self Service</a></li>
+</ul></li>
+<li>Cancer Care – Monthly Waiting Times by Trust:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CancerCare-MonthlyWaitingTimesbyTrust-Public_16051877521050/Cover" target="_blank">Public</a></li>
+</ul></li>
+<li>Cancer - Patient Target List (PTL):
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/PatientTargetListPTL-Cancer/Cover" target="_blank">Public</a></li>
+</ul></li>
+<li>Cancer Care - Quarterly Analysis:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CancerCare-QuarterlyAnalysis-Public_16051875967840/Cover" target="_blank">Public</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20Cancer%20Quarterly.xlsb?d=w1f892851ac26446dbf4e8e7a374016cb?Web=1" target="_blank">Self Service</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="mental-health" class="section level2">
+<h2>Mental Health</h2>
+<ul>
+<li>Children and Young People with an Eating Disorder:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/ChildrenandYoungPeoplewithanEatingDisorder-Provisional_16051941689010/Cover" target="_blank">Public</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20CYPED.xlsb?d=w4d6330b3ad314f82b8c8d8a2e5720f0f" target="_blank">Self Service</a></li>
+</ul></li>
+<li>Dementia - 65+ Estimated Diagnosis Rate:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/Dementia-65EstimatedDiagnosisRate-Public_16051899109360/Cover" target="_blank">Public</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20Dementia.xlsb?d=we42aab7dd5204b409506d038d85d9b4e" target="_blank">Self Service</a></li>
+</ul></li>
+<li>Improving Access to Psychological Therapies (IAPT) Monthly:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/ImprovingAccesstoPsychologicalTherapiesIAPT-Public_16051905661750/Cover" target="_blank">Public</a></li>
+</ul></li>
+<li>Improving Access to Psychological Therapies (IAPT) Quarterly:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/ImprovingAccesstoPsychologicalTherapiesIAPTQuarterly-Public_16051906695010/Cover" target="_blank">Public</a></li>
+</ul></li>
+<li>Improving Access to Psychological Therapies (IAPT):
+<ul>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20IAPT.xlsb?d=wd0998afe9fb54a588a13ac62d83774d7?Web=1" target="_blank">Self Service</a></li>
+</ul></li>
+<li>Severe Mental Illness:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/SevereMentalIllnessQuarterly-Public_16032695351760/Cover" target="_blank">Public</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20SMI.xlsb?d=w070895dd960644d089f1b3f6bfebe936" target="_blank">Self Service</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="combined-summary" class="section level2">
+<h2>Combined Summary</h2>
+<ul>
+<li>Combined Summary Report:
+<ul>
+<li><a href="https://powerbi.scwcsu.nhs.uk/reports/powerbi/Digital%20Intelligence/DI1018%20-%20Combined%20Performance%20Summary/Combined%20Summary%20Report%20-%20Performance?rs:embed=true" target="_blank">Public</a></li>
+</ul></li>
+<li>Combined Performance Measures:
+<ul>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20Combined.xlsb?d=w0bd5348b52ec4c21ac3251ef90516250" target="_blank">Self Service</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="other-health" class="section level2">
+<h2>Other Health</h2>
+<ul>
+<li>Infection Control - Healthcare Associated Infection (HCAI):
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/InfectionControl-HealthcareAssociatedInfectionHCAI-Public_16051908116100/Cover" target="_blank">Public</a></li>
+</ul></li>
+<li>Infection Control - Healthcare Associated Infection (HCAI) Commissioner:
+<ul>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20Infection_Control_Commissioner.xlsb?d=wb359ddc7d591460587812678568d9fe0" target="_blank">Self Service</a></li>
+</ul></li>
+<li>Infection Control - Healthcare Associated Infection (HCAI) Provider:
+<ul>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20Infection%20Control_Provider.xlsb?d=w86140c86c72546a28b23cdaa6db8f086" target="_blank">Self Service</a></li>
+</ul></li>
+<li>Quarterly Smoking Status at Time of Delivery:
+<ul>
+<li><a href="https://tableau-prod.scwcsu.nhs.uk/#/views/QuarterlySmokingStatusatTimeofDelivery-Public_16244443106900/Cover?:embed=true" target="_blank">Public</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="archived-performance" class="section level2">
+<h2>Archived Performance</h2>
+<ul>
+<li>Early Intervention in Psychosis Waiting Times:
+<ul>
+<li><a href="https://tableau-prod.scwcsu.nhs.uk/views/EarlyInterventioninPsychosisWaitingTimes-Public_v1_1_0/Cover?:embed=true#3" target="_blank">Public</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20EIP.xlsb?d=wda73e8a4f7d740f38e350347249c8eb6?Web=1" target="_blank">Self Service</a></li>
+</ul></li>
+<li>Monthly Activity Return:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/MonthlyActivityReturn-Public_v1_1_0/MonthlyActivityReturn" target="_blank">Public</a></li>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/MonthlyActivityReturn-Provisional_v1_1_15850328893850/MonthlyActivityReturn" target="_blank">Provisional</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20MAR.xlsb?d=wbdd67d35f0ad4201969f6ccee49ff8ae?Web=1" target="_blank">Self Service</a></li>
+</ul></li>
+<li>Quarterly Activity Return:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/QuarterlyActivityReturnQAR-Public_v1_1_0/QuarterlyActivityReturn" target="_blank">Public</a></li>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/QuarterlyActivityReturn-Provisional_v1_1_15850329527890/QuarterlyActivityReturn" target="_blank">Provisional</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20QAR.xlsb?d=w4a899ab4147c4e3db47f7e183a64e4ae?Web=1" target="_blank">Self Service</a></li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="paused-due-to-covid-19" class="section level2">
+<h2>Paused due to COVID-19</h2>
+<p>Due to the coronavirus illness (COVID-19) and the need to release capacity across the NHS to support the response, NHS England have paused the collection and publication of some official statistics. NHS England will review ahead of 2021/22 Q2 to establish if further collections should be reinstated or paused.</p>
+<p>The Performance Reports listed below are currently paused. For further information please refer to <a href="https://www.england.nhs.uk/statistics/covid-19-and-the-production-of-statistics/" class="uri">https://www.england.nhs.uk/statistics/covid-19-and-the-production-of-statistics/</a></p>
+<ul>
+<li>Audiology:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/Audiology-Public_16051825854450/Cover" target="_blank">Public</a></li>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/Audiology-Provisional_16051921982370/Cover" target="_blank">Provisional</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20Audiology.xlsb?d=waec56d19893b48ff85eea72e7ddc76b6?Web=1" target="_blank">Self Service</a></li>
+</ul></li>
+<li>Cancelled Elective Operations:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CancelledElectiveOperations-Public_16051826550810/Cover" target="_blank">Public</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20Cancelled%20Elective%20Operations%20Quarterly.xlsb?d=we1e703455e294d5a8bbf0f9bac0e1d26?Web=1" target="_blank">Self Service</a></li>
+</ul></li>
+<li>Critical Care Bed Capacity &amp; Urgent Operations Cancelled
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CriticalCareBedCapacityUrgentOperationsCancelled-Public_16051888243590/Cover" target="_blank">Public</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20Critical%20Care%20Beds.xlsb?d=w8965074ba5ec49f395f4921783920e82?Web=1" target="_blank">Self Service</a></li>
+</ul></li>
+<li>Delayed Transfer of Care:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/DelayedTransferofCare-Public_16051892061910/Cover" target="_blank">Public</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20DTOC.xlsb?d=w87ea1bc9880b4132a3f45f12b03ea06b?Web=1" target="_blank">Self Service</a></li>
+</ul></li>
+<li>Mixed Sex Accommodation:
+<ul>
+<li><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/MixedSexAccommodation-Public_16051908976660/Cover" target="_blank">Public</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Performance/Self_Service_Performance_Data%20MSA.xlsb?d=w50d82c47c6c440c9a25cd1c5701adeeb?Web=1" target="_blank">Self Service</a></li>
+</ul></li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="urgent-and-emergency-care" class="section level1">
+<h1>Urgent and Emergency Care</h1>
+<p>The Emergency Care Data Set (ECDS) is now available from SCW. The ECDS is the direct replacement for the A&amp;E Commissioning Data Set (A&amp;E CDS). The new dataset allows greater patient level detail to be collected about patients in an emergency care setting thus supporting improvements to commissioning of emergency care services.</p>
+<p>The ECDS is made available with monthly, weekly and daily views. The three views differ as follows:</p>
+<ul>
+<li><p>Monthly views will most closely resemble existing A&amp;E data and should be used for monthly reporting and detailed investigations.</p></li>
+<li><p>Weekly views are useful for more frequent reporting, but may not align with monthly data and there is greater likelihood of incomplete coding of records.</p></li>
+<li><p>Daily views may be refreshed daily by providers, with the potential for records to be updated repeatedly, therefore this data should be used for operational purposes only.</p></li>
+</ul>
+<p>The ECDS Portfolio page can be accessed by following <a href="https://insights-secure.scwcsu.nhs.uk/SitePages/default.aspx#/product/ECDS" target="_blank">this link</a>.</p>
+<div id="data-source" class="section level3">
+<h3>Data Source</h3>
+<p>The data source for the Urgent Care Portfolio are the ECDS national datasets.</p>
+</div>
+<div id="product-owner-1" class="section level3">
+<h3>Product Owner</h3>
+<p>The Product Owner for the Emergency Care Dataset is Ross Muteham: <a href="mailto:ross.muteham@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">ross.muteham@nhs.net</a></p>
+</div>
+<div id="further-information-1" class="section level3">
+<h3>Further Information</h3>
+<p>For further information or if you have any questions about the Self Service Reports please contact <a href="mailto:scwcsu.cms@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">scwcsu.insights@nhs.net</a>.</p>
+</div>
+<div id="urgent-care-reports" class="section level2">
+<h2>Urgent Care Reports</h2>
+<ul>
+<li><p><a href="https://powerbi.scwcsu.nhs.uk/reports/powerbi/Digital%20Intelligence/DI1026%20-%20ECDS%20Reporting/ECDS%20High%20Level%20Reporting?rs:embed=true" target="_blank">Emergency Care Dataset High Level Reporting</a></p></li>
+<li><p><a href="https://powerbi.scwcsu.nhs.uk/reports/powerbi/Digital%20Intelligence/DI1026%20-%20ECDS%20Reporting/ECDS%20Data%20Quality%20Suite?rs:embed=true" target="_blank">Emergency Care Data Quality Suite</a></p></li>
+<li><p>Emergency Care Dataset Self-Service Workbook:</p>
+<ul>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/ECDS/Self_Service_ECDS_Daily.xlsb?d=wa7174e6bd890493cb8688e115a8d66d8" target="_blank">Daily</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/ECDS/Self_Service_ECDS_Weekly.xlsb?d=w146d4de623a4491aa254d18eb8532e16" target="_blank">Weekly</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/ECDS/Self_Service_ECDS_Weekly.xlsb?d=w146d4de623a4491aa254d18eb8532e16" target="_blank">Monthly</a></li>
+</ul></li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="contract-monitoring-solution" class="section level1">
+<h1>Contract Monitoring Solution</h1>
+<p>The Contract Management Solution (CMS) provides a suite of reports and dashboards that inform a view of provider’s activity and cost performance. The enterprised solution presents the data in a visually appealing format thus enabling better interpretation of the performance thus leading to improved decision-making.</p>
+<p>The Contract Monitoring Solution Portfolio page can be accessed by following <a href="https://insights-secure.scwcsu.nhs.uk/SitePages/default.aspx#/product/cms" target="_blank">this link</a>.</p>
+<div id="data-source-1" class="section level3">
+<h3>Data Source</h3>
+<p>The data source for the Contract Monitoring Solution Portfolio is the Service Level Agreement Monitoring (SLAM) dataset.</p>
+</div>
+<div id="product-owner-2" class="section level3">
+<h3>Product Owner</h3>
+<p>The Product Owner for the Contract Monitoring Solution Portfolio is Ian Price: <a href="mailto:ian.price@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">ian.price@nhs.net</a></p>
+<p>The Product Owner for the SLAM Load Checks is Enohi Odogu: <a href="mailto:enohi.odogu@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">enohi.odogu@nhs.net</a></p>
+</div>
+<div id="further-information-2" class="section level3">
+<h3>Further Information</h3>
+<p>For further information or if you have any questions about the Self Service Reports, please contact <a href="mailto:scwcsu.cms@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">scwcsu.cms@nhs.net</a></p>
+<hr />
+</div>
+<div id="contract-monitoring-solution-reports" class="section level2">
+<h2>Contract Monitoring Solution Reports</h2>
+<ul>
+<li><p><a href="https://powerbi.scwcsu.nhs.uk/reports/powerbi/Digital%20Intelligence/DI1006%20-%20CMS%20Activity%20and%20Finance%20Reporting/DI1006.3%20-%20CMS%20ACM%20Checks/SLAM%20ACM%20Load?rs:embed=true" target="_blank">SLAM Load Checks</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CMSActivityandFinanceReportR/Cover" target="_blank">CMS Activity and Finance Report Released</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CMSActivityandFinanceReport/Cover" target="_blank">CMS Activity and Finance Report</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CMSAFRDataDownloader/Cover" target="_blank">CMS AFR Data Downloader (Beta)</a></p></li>
+<li><p>CMS AFR Self Service:</p>
+<ul>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Contract%20Monitoring%20Solution/CMS%20AFR_Self%20Service.xlsb?d=wb8d23bfd121343f69296e50b774e82fb?Web=1" target="_blank">Combined</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Contract%20Monitoring%20Solution/CMS%20AFR_Self%20Service%20-%20Released.xlsb?d=wac3a4bf8bbac4d0db6e60473b2383b9d?Web=1" target="_blank">Released</a></li>
+<li><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Contract%20Monitoring%20Solution/CMS%20AFR_Self%20Service%20-%20Operational.xlsb?d=wb0d8374e6bb74c3fb26276157da200f7?Web=1" target="_blank">Operational</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="archived-reports" class="section level2">
+<h2>Archived Reports</h2>
+<ul>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CMSActivityandFinanceReportReleasedM1April2021/Cover" target="_blank">CMS Activity and Finance Report Released (M12 April 2021)</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CMSActivityandFinanceReportReleasedM12March2021/Cover" target="_blank">CMS Activity and Finance Report Released (M12 March 2021)</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CMSActivityandFinanceReportReleasedM11February2021/Cover" target="_blank">CMS Activity and Finance Report Released (M11 February 2021)</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CMSActivityandFinanceReportReleasedM10January2021/Cover" target="_blank">CMS Activity and Finance Report Released (M10 January 2021)</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CMSActivityandFinanceReportReleasedM9December2020/Cover" target="_blank">CMS Activity and Finance Report Released (M9 December 2020)</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CMSActivityandFinanceReportReleasedM8November2020/Cover" target="_blank">CMS Activity and Finance Report Released (M8 November 2020)</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CMSActivityandFinanceReportReleasedM7October2020/Cover" target="_blank">CMS Activity and Finance Report Released (M7 October 2020)</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CMSActivityandFinanceReportReleasedM6September2020/Cover" target="_blank">CMS Activity and Finance Report Released (M6 September 2020)</a></p></li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="payment-by-results-pbr" class="section level1">
+<h1>Payment by Results (PbR)</h1>
+<p>The PBR Portfolio can be accessed by following <a href="https://insights-secure.scwcsu.nhs.uk/SitePages/default.aspx#/product/selfservice_pbr" target="_blank">this link</a>.</p>
+<p>Note: Digital Intelligence are been working to improve the stability of the self-service data sets and have added new versions (2.0) of the self-service templates. We have kept the previous version on the page for backward compatibility, however these templates will be removed in due time. Therefore, please use the version 2.0 templates for all new work and look to migrate any existing work to the new formats.</p>
+<div id="self-service-cubes" class="section level2">
+<h2>Self Service Cubes</h2>
+<p>The Self Service Cubes enable users to create their own analysis from national activity datasets. Whilst not replacing analytical support, these data cubes enable users to see and manipulate their data in an easy to access way.</p>
+<div id="data-source-2" class="section level3">
+<h3>Data Source</h3>
+<p>The data source for the Self Service – PbR Portfolio is the PbR national dataset.</p>
+</div>
+<div id="product-owner-3" class="section level3">
+<h3>Product Owner</h3>
+<p>The Product Owner for the Self Service – PbR Portfolio is Hannah Sleep:
+<a href="mailto:hannah.sleep@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">hannah.sleep@nhs.net</a></p>
+</div>
+<div id="further-information-3" class="section level3">
+<h3>Further Information</h3>
+<p>For further information or if you have any questions about the Self Service Reports please contact <a href="mailto:scwcsu.insights@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">scwcsu.insights@nhs.net</a>.</p>
+</div>
+</div>
+<div id="payment-by-results-reports" class="section level2">
+<h2>Payment by Results Reports</h2>
+<ul>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/Self%20Service/PbR/Internal/Self%20Service%20-%20EM%20-%20v2.0.xlsx?web=1" target="_blank">SUS - Emergency v2.0</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/Self%20Service/PbR/Direct/Self%20Service%20Direct%20-%20EM%20-%20v2.0.xlsx?web=1" target="_blank">SUS - Emergency v2.0 – Direct</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/Self%20Service/PbR/Internal/Self%20Service%20-%20Inpatients%20-%20V2.0.xlsx?web=1" target="_blank">SUS - Inpatients v2.0</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/Self%20Service/PbR/Direct/Self%20Service%20Direct%20-%20Inpatients%20-%20v2.0.xlsx?web=1" target="_blank">SUS - Inpatients v2.0 – Direct</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/Self%20Service/PbR/Internal/Self%20Service%20-%20OP%20-%20v2.0.xlsx?web=1" target="_blank">SUS - Outpatient v2.0</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/Self%20Service/PbR/Direct/Self%20Service%20Direct%20-%20OP%20-%20v2.0.xlsx?web=1" target="_blank">SUS - Outpatient v2.0 – Direct</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/Self%20Service/PbR/Internal/Self%20Service%20-%20Referrals%20-%20v2.0.xlsx?web=1" target="_blank">Referrals v2.0</a></p></li>
+</ul>
+</div>
+<div id="archived-payment-by-results-reports" class="section level2">
+<h2>Archived Payment by Results Reports</h2>
+<ul>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/Self%20Service/PbR/Internal/Self%20Service%20-%20EM.xlsx?web=1" target="_blank">SUS - Emergency v1.0</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/Self%20Service/PbR/Direct/Self%20Service%20Direct%20-%20EM.xlsx?web=1" target="_blank">SUS - Emergency v1.0 – Direct</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/Self%20Service/PbR/Internal/Self%20Service%20-%20Inpatients.xlsx?web=1" target="_blank">SUS - Inpatients v1.0</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/Self%20Service/PbR/Direct/Self%20Service%20Direct%20-%20Inpatients.xlsx?web=1" target="_blank">SUS - Inpatients v1.0 – Direct</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/Self%20Service/PbR/Internal/Self%20Service%20-%20OP.xlsx?web=1" target="_blank">SUS - Outpatient v1.0</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/Self%20Service/PbR/Direct/Self%20Service%20Direct%20-%20OP.xlsx?web=1" target="_blank">SUS - Outpatient v1.0 – Direct</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/Self%20Service/PbR/Internal/Self%20Service%20-%20Referrals.xlsx?web=1" target="_blank">Referrals v1.0</a></p></li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="coronavirus-covid-19" class="section level1">
+<h1>Coronavirus (COVID-19)</h1>
+<p>This page contains reports that have been designed to complement existing national reporting and seeks to provide localised information relevant to systems.</p>
+<p>The Covid-19 Enterprise Dashboard provides insight through the provision of trend analysis and reporting of the current situation across a number of metrics of interest in a continued effort to support an understanding of the demand being placed on local systems as a result of the Coronavirus pandemic.
+The Coronavirus (COVID-19) Portfolio page can be accessed by following <a href="https://insights-secure.scwcsu.nhs.uk/SitePages/default.aspx#/product/covid_19" target="_blank">this link</a>.</p>
+<div id="product-owners-1" class="section level3">
+<h3>Product Owners</h3>
+<p>The Product Owners for reports in this portfolio are as follows:</p>
+<ul>
+<li><p>COVID-19 Enterprise Dashboard – Enohi Odogu (<a href="mailto:enohi.odogu@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">enohi.odogu@nhs.net</a>) and Gill Page (<a href="mailto:gill.page@nhs.net">gill.page@nhs.net</a>)</p></li>
+<li><p>COVID-19 Daily Reporting - Frimley/HIOW Analytics – Ross Muteham(<a href="mailto:ross.muteham@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">ross.muteham@nhs.net</a>)</p></li>
+<li><p>COVID-19 Vaccination Uptake Dashboard – Paul Walton(<a href="mailto:paul.walton1@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">paul.walton1@nhs.net</a>)</p></li>
+</ul>
+</div>
+<div id="further-information-4" class="section level3">
+<h3>Further Information</h3>
+<p>For further information or if you have any questions about the Coronavirus (COVID-19) reporting portfolio please contact the applicable Product Owner(s) from the list above.</p>
+</div>
+<div id="coronavirus-covid-19-reports" class="section level2">
+<h2>Coronavirus (COVID-19) Reports</h2>
+<ul>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/Covid-19EnterpriseDashboard/Cover_1" target="_blank">COVID-19 Enterprise Dashboard</a></p></li>
+<li><p><a href="https://powerbi.scwcsu.nhs.uk/Reports/powerbi/Digital%20Intelligence/DI2001%20-%20Coronavirus%20COVID-19/Power%20BI%20Covid?rs:embed=true" target="_blank">COVID-19 Daily Reporting - Frimley/HIOW Analytics</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/COVID-19VaccinationUptakeDashboard_16154749013830/Cover" target="_blank">COVID-19 Vaccination Uptake Dashboard</a></p></li>
+</ul>
+<hr />
+<!-- # COVID Clinical Assessment Service -->
+<!-- A multi-disciplinary SCW team including Digital Intelligence was established in March 2020 to support NHS England & South Central Ambulance Service, to development and manage the COVID Clinical Assessment Service (C-CAS) for England. -->
+<!-- C-CAS role was to employ a number of clinicians, including GPs and other healthcare professionals including pharmacists to the SCAS 111 service. The clinician's task is to provide a 24/7 clinical assessment telephone service for patients suffering from COVID and viruses related symptoms who phoned 111 for advice and guidance. -->
+<!-- Role based access is used to limit the availability of all C-CAS reporting due to the sensitive data collected and reported on. Therefore, the dashboards are only visible to named individuals in NHS England, SCAS and the internal SCW C-CAS team. -->
+<!-- The Covid Clinical Assessment Service Portfolio page can be accessed by following <a href="https://insights-secure.scwcsu.nhs.uk/SitePages/default.aspx#/product/CCAS" target="_blank">this link</a>. -->
+<!-- ### Product Owner -->
+<!-- The Product Owner for C-CAS is Andrew Alli: [andrew.alli\@nhs.net](mailto:andrew.alli@nhs.net?subject=Query%20from%20Enterprise%20Report%20Catalogue "andrew.alli@nhs.net") -->
+<!-- ### Further Information -->
+<!-- For further information or if you have any questions about the COVID Clinical Assessment Service please contact [scwcsu.digitalintelligence\@nhs.net](mailto:scwcsu.digitalintelligence@nhs.net) -->
+<!-- ## C-CAS Reports -->
+<!-- * <a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/COVIDClinicalAssessmentService-StrategicDashboard/Cover" target="_blank">C-CAS Strategic Dashboard</a> -->
+<!-- * <a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/COVIDClinicalAssessmentService-WTSShiftBookingsDashboard_15929952353460/Cover" target="_blank">C-CAS WTS Shift Bookings</a> -->
+<!-- * <a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/COVIDClinicalAssessmentService-NHS111Dashboard_15929956829200/Cover" target="_blank">C-CAS NHS 111 Dashboard</a> -->
+<!-- * <a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/COVIDClinicalAssessmentService/Cover" target="_blank">C-CAS Operational Dashboard</a> -->
+<!-- ------------------------------------------------------------------------ -->
+</div>
+</div>
+<div id="elective-care" class="section level1">
+<h1>Elective Care</h1>
+<p>This portfolio presents information, data and statistics relating to Elective Care.</p>
+<p>Healthcare that is planned in advance is known as Elective Care. It involves specialist clinical care or surgery, with demand generated following a referral from a GP or community health professional. Outpatient activity makes up a large proportion of elective care –- Activity that can often follow into an elective inpatient stay or further specialist treatment.</p>
+<p>The NHS Long Term Plan recently announced that there will be a fundamental redesign of outpatient services, which make up this significant portion of elective care. Over the next five years, NHS England aims to avoid up to a third of face-to-face outpatient visits through:</p>
+<ul>
+<li><p>Better support to GPs to avoid the need for a hospital referral</p></li>
+<li><p>Online booking systems</p></li>
+<li><p>Appointments closer to home</p></li>
+<li><p>Digital appointments</p></li>
+</ul>
+<p>Performance of Elective Care is measured through metrics such as RTT (consultant led Referral To Treatment waiting times), 2WW (cancer care 2 Week Wait waiting times) and DM01 (diagnostic metrics) with public reporting included below. Further performance dashboards, self-service performance data and provisional dashboards available within the <a href="https://insights-secure.scwcsu.nhs.uk/SitePages/default.aspx#/product/performance" target="_blank">Provider Performance</a> portfolio.</p>
+<p>The Elective Care Portfolio page can be accessed by following <a href="https://insights-secure.scwcsu.nhs.uk/SitePages/default.aspx#/product/Elective" target="_blank">this link</a>.</p>
+<p><em>(This portfolio is in development with further content coming soon)</em></p>
+<div id="data-source-3" class="section level3">
+<h3>Data Source</h3>
+<p>The data source for the Elective Incentive Scheme is the SUS PbR national dataset.</p>
+</div>
+<div id="product-owner-4" class="section level3">
+<h3>Product Owner</h3>
+<p>The Product Owner for the Elective Incentive Scheme Dashboard is Jim Jowett: <a href="mailto:jim.jowett@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">jim.jowett@nhs.net</a></p>
+<p>The Product Owner for the Elective Care reports is Lewis Ball: <a href="mailto:lewis.ball@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">lewis.ball@nhs.net</a></p>
+</div>
+<div id="further-information-5" class="section level3">
+<h3>Further Information</h3>
+<p>For further information or if you have any questions about the Elective Care Portfolio, please contact <a href="mailto:scwcsu.digitalintelligence@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">scwcsu.digitalintelligence@nhs.net</a></p>
+</div>
+<div id="elective-care-reports" class="section level2">
+<h2>Elective Care Reports</h2>
+<ul>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/ElectiveIncentiveScheme_Monitoring_16052484125950/Cover" target="_blank">Elective Incentive Scheme</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/ElectiveRecoveryFund/Cover" target="_blank">Elective Recovery fund (Draft Baselines)</a></p></li>
+</ul>
+<p>The following three reports are copies of those held in the Performance portfolio, but are also applicable to the Elective Care portfolio:</p>
+<ul>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/Consultant-ledReferraltoTreatmentWaitingTimes-Public_16051882896570/Cover" target="_blank">Referral to Treatment (RTT) Waiting Times Statistics for Consultant-led Elective Care (Public)</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/CancerCare-MonthlyWaitingTimes-Public_16051828462790/Cover" target="_blank">Cancer Care – Monthly Waiting Times (Public)</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/Diagnostics-Public_16051903317650/Cover" target="_blank">Diagnostics (Public)</a></p></li>
+</ul>
+</div>
+<div id="archived-elective-care-reports" class="section level2">
+<h2>Archived Elective Care Reports</h2>
+<ul>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/ElectiveIncentiveScheme_Monitoring_M6FlexSeptember2020/Cover" target="_blank">Elective Incentive Scheme M6 Flex (September 2020)</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/ElectiveIncentiveScheme_Monitoring_M7FlexOctober2020/Cover" target="_blank">Elective Incentive Scheme M7 Flex (October 2020)</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/ElectiveIncentiveScheme_Monitoring_M8FlexNovember2020/Cover" target="_blank">Elective Incentive Scheme M8 Flex (November 2020)</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/ElectiveIncentiveScheme_Monitoring_M9FlexDecember2020/Cover" target="_blank">Elective Incentive Scheme M9 Flex (December 2020)</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/ElectiveIncentiveScheme_Monitoring_M10FlexJanuary2021/Cover" target="_blank">Elective Incentive Scheme M10 Flex (January 2021)</a></p></li>
+<li><p><a href="https://tableau-secure.scwcsu.nhs.uk/TabAuthReq/user/?path=/views/ElectiveIncentiveScheme_Monitoring_M11FlexFebruary2021/Cover" target="_blank">Elective Incentive Scheme M11 Flex (February 2021)</a></p>
+<hr />
+<hr /></li>
+</ul>
+</div>
+</div>
+<div id="mental-health-1" class="section level1">
+<h1>Mental Health</h1>
+<p>The Mental Health Services Data Set (MHSDS) collects data from the health records of individual children, young people and adults who are in contact with mental health services. The data is re-used for purposes other than their direct care and as such is referred to as a secondary uses data set.</p>
+<p>The Mental Health Self Service suite enables access to the commissioner post deadline extracts; which collate all the activity submitted by in scope organisations that provide specialist secondary mental health, learning disabilities and autism spectrum disorder services. The function of the suite is to provide high level overview of the topics contained within the individual workbooks.</p>
+<p>Please note that local business rules, relating to this theme have not been incorporated into the model, and measures within the workbooks have been calculated based on national definitions. Activity within the tool is based on Version 4.0 of the MHSDS.</p>
+<p>The Mental Health Portfolio page can be accessed by following <a href="https://insights-secure.scwcsu.nhs.uk/SitePages/default.aspx#/product/mh" target="_blank">this link</a>.</p>
+<div id="data-sources-1" class="section level3">
+<h3>Data Source(s)</h3>
+<p>The data sources for the Performance Reports are the MHSDS national datasets.</p>
+</div>
+<div id="product-owner-5" class="section level3">
+<h3>Product Owner</h3>
+<p>The Product Owner for Mental Health is Samara Makinde <a href="mailto:samara.makinde@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">samara.makinde@nhs.net</a></p>
+</div>
+<div id="further-information-6" class="section level3">
+<h3>Further Information</h3>
+<p>For further information or if you have any questions about the Mental Health portfolio please contact <a href="mailto:scwcsu.digitalintelligence@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">scwcsu.digitalintelligence@nhs.net</a></p>
+</div>
+<div id="mental-health-reports" class="section level2">
+<h2>Mental Health Reports</h2>
+<ul>
+<li><p><a href="https://powerbi.scwcsu.nhs.uk/reports/powerbi/Digital%20Intelligence/DI1005%20-%20MHSDS%20Visualisation/MHSDS%20Self%20Service%20Visualisation?rs:embed=true" target="_blank">MHSDS Self Service Visualisation (Beta)</a></p></li>
+<li><p><a href="https://powerbi.scwcsu.nhs.uk/reports/powerbi/Digital%20Intelligence/DI1005%20-%20MHSDS%20Visualisation/MH%20Assurance%20Tool?rs:embed=true" target="_blank">Mental Health Assurance Tool (Prototype)</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Mental%20Health/Self_Service_MHSDS_Inpatients.xlsb?d=w4c7905acaa724fc69fd0bfc74c2a06e3?Web=1" target="_blank">Mental Health Services Data Set - Inpatients (Beta)</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Mental%20Health/Self_Service_MHSDS_Patients.xlsb?d=wcf208d16c03a426c9ccec1ec36f0a409?Web=1" target="_blank">Mental Health Services Data Set - Patients (Beta)</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Mental%20Health/Self_Service_MHSDS_Referrals.xlsb?d=wbfc7e993d27940c0bf137b080b301bd0?Web=1" target="_blank">Mental Health Services Data Set - Referrals (Beta)</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Mental%20Health/Self_Service_MHSDS_Contacts.xlsb?d=w6035a0b2be3d42a3897a66851161320d?Web=1" target="_blank">Mental Health Services Data Set - Contacts (Beta)</a></p></li>
+<li><p><a href="https://insights-secure.scwcsu.nhs.uk/ProductPageDocuments/Mental%20Health/Self_Service_MHSDS_Cluster.xlsb?d=w91a9f925e5934a60aee1d31eae2a9d22?Web=1" target="_blank">Mental Health Services Data Set - Clusters (Beta)</a></p></li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="cancer-care" class="section level1">
+<h1>Cancer Care</h1>
+<p>This portfolio presents information, data and statistics relating to Cancer, covering national statistics and regional data flows.</p>
+<p>The latest release is the beta version of the Cancer Alliance Reporting Dashboard, produced by SCW for the Somerset, Wiltshire, Avon and Gloucestershire Cancer Alliance.</p>
+<p>The Cancer Care Portfolio page can be accessed by following <a href="https://insights-secure.scwcsu.nhs.uk/SitePages/default.aspx#/product/cancer" target="_blank">this link</a>.</p>
+<div id="product-owner-6" class="section level3">
+<h3>Product Owner</h3>
+<p>The Product Owner for Cancer Care is Catherine Neck: <a href="mailto:catherine.neck@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">catherine.neck@nhs.net</a></p>
+</div>
+<div id="further-information-7" class="section level3">
+<h3>Further Information</h3>
+<p>For further information or if you have any questions about the Cancer Care portfolio, please contact <a href="mailto:scwcsu.digitalintelligence@nhs.net?subject=Query%20from%20DI%20Reporting%20e-Catalogue">scwcsu.digitalintelligence@nhs.net</a></p>
+</div>
+<div id="cancer-care-reports" class="section level2">
+<h2>Cancer Care Reports</h2>
+<ul>
+<li><p><a href="https://powerbi.scwcsu.nhs.uk/reports/powerbi/Pipeline/SWCA/Prostate%20Dashboard%20-%20Draft?rs:embed=true" target="_blank">South West Prostate Dashboard (Draft)</a></p></li>
+<li><p><a href="https://powerbi.scwcsu.nhs.uk/reports/powerbi/Digital%20Intelligence/DI1033%20-%20Cancer%20Care%20Portfolio/Cancer%20Performance%20Dashboard?rs:embed=true" target="_blank">Cancer Performance Dashboard</a></p></li>
+<li><p><a href="https://public.tableau.com/views/EarlyDiagnosisProgramme/Cover?:language=en&:display_count=y&:embed=true&:showVizHome=no" target="_blank">Early Diagnosis Programme</a></p></li>
+<li><p><a href="https://digital.nhs.uk/services/screening-services/breast-screening-services" target="_blank">Breast Screening Services</a></p></li>
+<li><p><a href="NA" target="_blank">Bowel Cancer Screening</a></p></li>
+<li><p><a href="https://digital.nhs.uk/services/cytology-statistics" target="_blank">Cytology Statistics</a></p></li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="coming-soon" class="section level1">
+<h1>Coming Soon</h1>
+<p>Digital Intelligence are working across traditional information and commissioning team boundaries as well as those teams who may not routinely fit into this bracket. DI’s natural collaborative &amp; agile approach works well across any boundary and results in the ability for the expansion of our Digital Portfolios on offer to our customers and to SCW. The MDT approach, the technology available along with the local subject matter experts allow us to support and build data models and enterprise solutions for a varied customer base that in turn increases the digital portfolios thus add value to routinely collected data.</p>
+<div id="paediatrics-portfolio" class="section level3">
+<h3>Paediatrics Portfolio</h3>
+<ul>
+<li><p>Currently being scoped for future enterprise reports  </p>
+<ul>
+<li>Product Owner – <em>to be agreed</em></li>
+</ul></li>
+</ul>
+</div>
+<div id="primary-care-portfolio" class="section level3">
+<h3>Primary Care Portfolio</h3>
+<ul>
+<li><p>Automated Primary Care reporting, currently in discussion</p>
+<ul>
+<li>Product Owner – Jack Willis: <a href="mailto:jack.willis@nhs.net">jack.willis@nhs.net</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="human-resources-portfolio" class="section level3">
+<h3>Human Resources Portfolio</h3>
+<ul>
+<li><p>Automation &amp; workforce reporting <em>– planned for release 2021</em></p>
+<ul>
+<li>Product Owner – Paul Toomer: <a href="mailto:paul.toomer@nhs.net">paul.toomer@nhs.net</a></li>
+</ul></li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="accessing-insights" class="section level1">
+<h1>Accessing Insights</h1>
+<div id="request-form" class="section level3">
+<h3>Request Form</h3>
+<p>To request access to the Insights Portal, follow the link below to complete the
+<a href="https://accessrequest.scwcsu.nhs.uk/form?productId=3">Access Request Form</a>.</p>
+</div>
+<div id="troubleshooting" class="section level3">
+<h3>Troubleshooting</h3>
+<p>Below are some of the most commonly encountered issues that users have come across when accessing the Insights reporting page, along with the suggested resolution.</p>
+<p><img src="assets/img/ER_Catalogue_images/InsightsTroubleshooting.PNG" title="Insights access-Troubleshooting guide" /></p>
+<hr />
+</div>
+</div>
+<!--bookdown:body:end-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <link href="hero.css" rel="stylesheet" /> -->
+    </head>
+    <body>
+        <div class="footer-container">
+            <p class="footer-text">Created by NHS South, Central and West's Digital Intelligence Team</p>
+            <div class="contact-container">
+                <a class="footer" href="mailto:scwcsu.digitalintelligence@nhs.net?subject=Enterprise%20Reporting%20e-Catalogue">
+                <!--  <img class="contact" src="assets/img/Icon%20Libray_0058_Email.svg"> -->
+                    <svg class="contact" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000"
+                preserveAspectRatio="xMidYMid meet">
+                    <metadata>
+                        Created by potrace 1.16, written by Peter Selinger 2001-2019
+                    </metadata>
+                    <g class="contact-fill" transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
+                    fill="#000000" stroke="none">
+                    <path d="M697 4009 c-108 -26 -201 -102 -250 -207 l-32 -67 0 -1235 0 -1235
+                        32 -67 c40 -84 97 -141 181 -181 l67 -32 1800 0 1800 0 67 32 c84 40 141 97
+                        181 181 l32 67 0 1235 0 1235 -32 67 c-40 84 -97 141 -181 181 l-67 32 -1780
+                        2 c-1014 0 -1796 -3 -1818 -8z m3582 -158 c9 -6 -46 -62 -206 -207 -955 -869
+                        -1450 -1312 -1485 -1331 -55 -31 -131 -31 -186 0 -23 12 -411 357 -863 767
+                        -452 410 -827 748 -833 753 -8 5 -6 10 4 17 19 12 3549 13 3569 1z m-2990
+                        -756 c358 -324 650 -593 649 -597 -2 -5 -307 -283 -678 -619 -553 -500 -676
+                        -607 -681 -592 -9 22 -11 2388 -3 2420 l6 23 28 -23 c15 -12 321 -287 679
+                        -612z m3130 -595 c0 -657 -4 -1203 -8 -1213 -5 -15 -127 91 -681 592 -371 336
+                        -675 616 -675 621 0 6 304 285 675 621 554 502 676 607 681 592 4 -10 8 -556
+                        8 -1213z m-2247 -205 c64 -59 127 -107 168 -127 59 -30 73 -33 155 -33 82 0
+                        96 3 155 33 41 20 104 68 169 127 57 53 107 94 111 93 4 -2 308 -275 675 -608
+                        368 -333 673 -608 679 -612 8 -6 6 -11 -4 -18 -19 -12 -3549 -13 -3569 -1 -11
+                        7 -7 15 20 39 19 17 324 294 679 616 355 322 648 585 652 585 3 1 53 -42 110
+                        -94z"/>
+                    </g>
+                    </svg>
+                </a>
+                <p class="footer-text">Contact Us</p>
+            </div>
+            
+        </div>
+    </body>
+</html>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<!--bookdown:link_prev-->
+<!--bookdown:link_next-->
+    </div>
+  </div>
+<!--bookdown:config-->
+
+</body>
+
+</html>
