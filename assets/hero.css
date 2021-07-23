@@ -1,0 +1,12 @@
+.book .book-body .page-wrapper .page-inner section.normal div.hero-image-container {
+    /* width: 100%; */
+    display: flex;
+    overflow: auto;
+    min-height: 300px;
+    /* background-color: #1c355e;
+    background-image: radial-gradient(#768692 1%,#1c355e 99%); */
+}
+
+div.image-container {
+    flex: 1;
+}
