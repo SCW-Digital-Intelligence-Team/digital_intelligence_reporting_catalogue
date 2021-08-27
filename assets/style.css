@@ -23,6 +23,7 @@
     --highlight_red: #DA291C;
    } 
 
+
   .book.font-family-1 {
     font-family: Calibri;
   }
@@ -148,6 +149,23 @@ div .section .level2 h2 .hasAnchor {
     color: var(--nhs_pale_grey);
   }
 
+  .book .book-body .page-wrapper .page-inner section.normal ul li p:first-of-type {
+    margin-bottom: 0em;
+    font-weight: bold;
+  }
+
+  .book .book-body .page-wrapper .page-inner section.normal ul li ul li {
+    margin-top: 0em;
+  }
+
+  .book .book-body .page-wrapper .page-inner section.normal ul li ul li p:first-of-type {
+    font-weight:normal !important; 
+  }
+
+ ul li p a {
+    font-weight:normal;
+  }
+
   .book .book-summary ul.summary div p.bookdown-ref {
     /* color: var(--nhs_pink); */
     /* font-weight: bold; */
@@ -164,6 +182,14 @@ div .section .level2 h2 .hasAnchor {
 
   div.toc-foot-logo a img {
     width:100%
+  }
+
+  .book .book-body .page-wrapper .page-inner section.normal table tbody tr td:first-of-type {
+    font-weight: bold;
+  }
+
+  .book .book-body .page-wrapper .page-inner section.normal table tr:nth-child(2n) {
+    background-color: var(--pale_blue)
   }
 
  /*  .book .book-summary ul.summary div.toc-foot-logo a {
